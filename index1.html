@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+     <!-- Bootstrap LINK-->   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!--CSS-->
+     <link rel="stylesheet"  type="text/css" href="style1.css">
+     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <form action="">
+            <h2 class="float-shadow">Calculate</h2>
+            <div id="error"></div>
+
+    <!-- First Number-->
+    <div class="form-group">
+    <input type="text" class="form-control" id="n1" placeholder="Enter your First Number">
+    </div>
+
+    <!-- Operator-->
+    <div class="form-group">
+        
+        <select class="form-control" id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select>
+    </div>
+
+    <!--Second number-->
+    <div class="form-group">
+    <input type="text" class="form-control" id="n2" placeholder="Enter your Second Number">
+    </div>
+ 
+    <!-- Equal Button-->
+    <div align='center'> 
+    <button type="submit" class="btn btn-primary" onclick="calc();">=</button> 
+           
+    <!-- Result Button-->
+    <div class="form-group">
+    <input type="text" class="form-control" id="result">
+    </div>
+
+    </form>
+          
+<!-- Bootstrap LINK-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Js file-->
+<script src="/cal.js"></script>
+</body>
+       </html>
